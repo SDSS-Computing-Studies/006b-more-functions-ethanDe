@@ -21,17 +21,17 @@ assert triangle(1,1,4) == 0
 (2 points)
 """
 
-def triangle(a,b,c):
+def triangle(x,y,z):
     import math
-    list1 = [a,b,c]
+    list1 = [x,y,z]
     a = list1[0]
     b = list1[1]
     c = list1[2]
     if c > a+b:
         return 0
-    elif math.sqrt(a**2 + b**2) == c:
+    elif math.sqrt(a**2) + (b**2) == c:
         return 2
-    elif math.sqrt(a**2 + b**2) < c:
+    elif math.sqrt(a**2) + (b**2) < c:
         return 3
-    elif math.sqrt(a**2 + b**2) > c:
+    elif math.sqrt(a**2) +(b**2) > c:
         return 1

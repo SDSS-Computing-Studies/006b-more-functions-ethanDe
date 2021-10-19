@@ -12,15 +12,13 @@ Sample assertions:
 assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
-def converTemp(x, y):
+def convertTemp(x, y):
     if y == "C":
         x = x * 9/5 + 32
         return x
-    elif x == "F":
-        y = y - 32 * 5/9
+    elif y == "F":
+        y = (x - 32) * 5/9
         return y
-
-print(converTemp(10,'C'))
-
+print(convertTemp(32,'F'))
 
 
