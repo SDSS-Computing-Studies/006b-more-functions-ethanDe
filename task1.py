@@ -14,8 +14,8 @@ assert btcTocad(1) == 45000
 (2 points) 
 """
 
-def btcTocad():
-    pass
+def btcTocad(x):
+    return x*45000
 
 
 """
@@ -26,3 +26,4 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
+    
