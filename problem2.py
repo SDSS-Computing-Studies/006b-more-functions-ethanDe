@@ -31,7 +31,7 @@ def triangle(x,y,z):
         return 0
     elif math.sqrt(a**2) + (b**2) == c:
         return 2
-    elif math.sqrt(a**2) + (b**2) < c:
+    elif c > math.sqrt(a**2) + (b**2):
         return 3
-    elif math.sqrt(a**2) +(b**2) > c:
+    elif c < math.sqrt(a**2) +(b**2):
         return 1
