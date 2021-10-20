@@ -29,11 +29,11 @@ def triangle(a,b,c):
     c = list1[2]
     if c > a+b:
         return 0
-    elif c < math.sqrt(a**2 + b**2):
+    elif c < math.sqrt(a**2+b**2):
         return 1
-    elif c == math.sqrt(a**2 + b**2):
+    elif c == math.sqrt(a**2+b**2):
         return 2
-    elif c > math.sqrt(a**2 + b**2):
+    elif c > math.sqrt(a**2+b**2):
         return 3
 
-print(triangle(5,3,3))
+print(triangle(1,3,4))
