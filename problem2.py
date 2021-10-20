@@ -35,5 +35,3 @@ def triangle(a,b,c):
         return 2
     elif c > math.sqrt(a**2+b**2):
         return 3
-
-print(triangle(1,3,4))
