@@ -10,6 +10,4 @@ def test1():
 def test2():
     assert problem2.triangle(-2,1,5) == 0
     assert problem2.triangle(1,1,5) == 0
-    
-test1()
-test2()
+
