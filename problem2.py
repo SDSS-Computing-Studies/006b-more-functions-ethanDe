@@ -20,9 +20,8 @@ assert triangle(5,15,12) == 3
 assert triangle(1,1,4) == 0  
 (2 points)
 """
-
+import math
 def triangle(a,b,c):
-    import math
     list1 = [a,b,c]
     list1.sort()
     a = list1[0]
@@ -30,11 +29,11 @@ def triangle(a,b,c):
     c = list1[2]
     if c > a+b:
         return 0
-    elif math.sqrt(a**2 + b**2) == c:
+    elif c < math.sqrt(a**2 + b**2):
+        return 1
+    elif c == math.sqrt(a**2 + b**2):
         return 2
     elif c > math.sqrt(a**2 + b**2):
         return 3
-    elif c < math.sqrt(a**2 + b**2):
-        return 1
 
-print(triangle(5,15,12))
+print(triangle(5,3,3))
